@@ -1,9 +1,10 @@
 body {
   font-family: Arial, sans-serif;
-  background: transparent;  /* Set background back to transparent */
+  background: transparent;     /* Transparent background for iframe */
+  color: white;                /* White text for dark background */
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 .configurator {
@@ -18,8 +19,8 @@ body {
   position: relative;
   width: 300px;
   height: 500px;
-  border: 1px solid #ccc;
-  background: transparent; /* Transparent preview background */
+  border: 1px solid #444;      /* Dark grey border */
+  background: transparent;     /* Keep preview area transparent */
 }
 
 .preview img {
@@ -40,12 +41,20 @@ button {
   padding: 10px;
   width: 100%;
   cursor: pointer;
+  background-color: #222;      /* Dark button background */
+  color: white;                /* White text on buttons */
+  border: 1px solid #555;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;      /* Slightly lighter on hover */
 }
 
 #configurator {
-  background-color: transparent;  /* Transparent background for configurator */
+  background-color: transparent;  /* Transparent container */
   position: relative;
-  width: 500px;                  /* Adjust as needed */
-  height: 500px;                 /* Adjust as needed */
+  width: 500px;
+  height: 500px;
   margin: auto;
 }
