@@ -1,0 +1,28 @@
+<head>
+  <meta charset="UTF-8" />
+  <base href="./">
+  <title>CubeSat Configurator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+
+<body>
+  <h1>🛰️ CubeSat Platform Selector (Test)</h1>
+
+  <div class="configurator">
+    <div class="preview">
+      <img id="platform" src="" alt="Platform">
+    </div>
+
+    <div class="options">
+      <h3>Select Platform</h3>
+      <button onclick="setPart('platform', 'platform-1u.png')">1U</button>
+      <button onclick="setPart('platform', 'platform-2u.png')">2U</button>
+      <br><br>
+      <button onclick="clearConfig()">Reset</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
